@@ -1,0 +1,14 @@
+{
+  "name": "History Police Helper",
+  "version": "1.0",
+  "description": ":o",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["history", "management"],
+  "icons": {
+    "16": "eye.png",
+    "32": "eye.png"
+  },
+  "manifest_version": 2
+}

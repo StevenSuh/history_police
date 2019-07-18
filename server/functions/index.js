@@ -71,6 +71,18 @@ exports.uninstall = functions.https.onRequest((req, res) => {
   });
 });
 
+exports.disabled = functions.https.onRequest((req, res) => {
+  cors(req, res, async () => {
+    const db = admin.firestore();
+    await db.collection('events').add({
+      event: 'disabled',
+      time: Date.now(),
+    });
+
+    res.send();
+  });
+});
+
 exports.events_all = functions.https.onRequest((req, res) => {
   cors(req, res, async () => {
     const offset = req.query.offset;
