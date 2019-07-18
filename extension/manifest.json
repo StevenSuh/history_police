@@ -1,0 +1,15 @@
+{
+  "name": "History Police",
+  "version": "1.0",
+  "description": ":o",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["history", "management"],
+  "icons": {
+    "16": "eye.png",
+    "32": "eye.png"
+  },
+  "manifest_version": 2
+}
